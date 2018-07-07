@@ -9,7 +9,7 @@ from qiskit import register, available_backends, get_backend
 
 def go_measure(qc, qr, cr, sim):
 
-	for i in range(16):
+	for i in range(9):
 		qc.measure(qr[i], cr[i])
 
 	backends = available_backends();

@@ -59,7 +59,7 @@ def go_job(backend, qc, b_print, shots):
 
 def getBitString(sim):
 
-	qbits = 16
+	qbits = 9
 	qr = QuantumRegister(qbits)
 	cr = ClassicalRegister(qbits)
 	qc = QuantumCircuit(qr, cr)
@@ -93,5 +93,5 @@ def print_map(res, max):
 				print('o', end='    ')
 			else:
 				print('x', end='    ')
-			if ((idx + 1) % 4 == 0):
+			if ((idx + 1) % 3 == 0):
 				print("\n")
